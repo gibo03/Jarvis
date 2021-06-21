@@ -52,6 +52,19 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Jarvis j = new Jarvis();
+
+        System.out.println("Unesite broj tacaka :");
+        int n = ul.nextInt();
+        Point[] points = new Point[n];
+        System.out.println("Unesite "+ n +" x, y koordinata");
+        for (int i = 0; i < n; i++)
+        {
+            points[i] = new Point();
+            points[i].x = ul.nextInt();
+            points[i].y = ul.nextInt();
+        }
+        j.Jarvis(points);
 
     }
 }
